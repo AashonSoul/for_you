@@ -1,0 +1,119 @@
+/* 627px and 288px */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+body{
+    height: 627px;
+    width: 288px;
+    background-color: black;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+}
+body::before{
+    content: '';
+    background-image: url(bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.btn{
+    width: 24vw;
+}
+#container1{
+    margin: -11rem 0;
+    height: 31vh;
+    border-radius: 2rem 2rem 2rem 1rem;
+    width: 68vw;
+    text-align: center;
+    border: 2px solid black;
+    background: lightgoldenrodyellow;
+    font-weight: bold;
+}
+#yes_btn{
+    background-color: black;
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+    width: 27vw;
+    height: 6vh;
+    cursor: pointer;
+}
+#yes_btn:hover{
+    background-color: lightgoldenrodyellow;
+    color: black;
+    border: 2px dashed black;
+}
+
+#container2{
+    height: 31vh;
+    border-radius: 1rem 2rem 2rem 2rem;
+    width: 72vw;
+    text-align: center;
+    border: 2px solid black;
+    background: #dfdf00;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#what_btn{
+    background-color: red;
+    color: #dfdf00;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 27vw;
+    height: 6vh;
+    cursor: pointer;
+    border: none;
+}
+#what_btn:hover{
+    color: red;
+    background-color: #dfdf00;
+    border: 2px dashed red;
+}
+
+#container3{
+    height: 31vh;
+    border-radius: 2rem 1rem 2rem 2rem;
+    width: 72vw;
+    text-align: center;
+    background: #00df25;
+    font-weight: bold;
+    color: #1200ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#so_btn{
+    background-color: #1200ff;
+    color: #00df25;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 27vw;
+    height: 6vh;
+    cursor: pointer;
+    border: none;
+}
+#so_btn:hover{
+    color: #1200ff;
+    border: 2px dashed #1200ff;
+    background-color: #00df25;
+}
+
+/* #bd_cont{
+    border: 2px solid red;
+} */
+
+.bg{
+    background: url(her.jpg);
+    background-size: 18rem;
+}

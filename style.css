@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(59, 57, 57);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* BOX 1 */
+#container1{
+    width: 45vw;
+    height: 12vh;
+    background-color: red;
+    position: absolute;
+    transition: all 1.2s ease-in;
+    bottom: -50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn{
+    width: 4vw;
+    height: 4vh;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    border-radius: 14px;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: white;
+    color: black;
+}
+
+/* BOX 2 */
+#container2{
+    width: 23vw;
+    height: 23vh;
+    background-color: cyan;
+    position: absolute;
+    transition: all 1s ease-in;
+    top: -50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* BOX 3 */
+#container3{
+    width: 20vw;
+    height: 33vh;
+    background-color: yellow;
+    position: absolute;
+    transition: all 1s ease-in;
+    top: -37%;
+    right: -14%;
+    transform: translate(-1%, -3%);
+}
+
+/* birthday container */
+#bd_cont{
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    font-size: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all 2s ease-in;
+    text-align: center;
+}
+
+
+/* utility classes */
+.show_cont1{
+    bottom: 50% !important;
+    left: 50% !important;
+}
+.show_cont2{
+    top: 50% !important;
+    left: 50% !important;
+}
+.show_cont3{
+    top: 37% !important;
+    right: 14% !important;
+}
+.show_wish{
+    font-size: 2rem !important;
+}
+.d_none{
+    width: 0;
+}
