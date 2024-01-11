@@ -5,6 +5,7 @@ const yes_btn = document.getElementById("yes_btn");
 const okay_btn = document.getElementById("okay_btn");
 const no_btn = document.getElementById("no_btn");
 const bd_cont = document.getElementById("bd_cont");
+const animated = document.getElementById("bd_cont");
 
 function entered() {
     console.log("Func called");
@@ -32,8 +33,24 @@ so_btn.addEventListener("click", ()=>{
     }, 2000);
 })
 
+
 function wish(){
-    console.log("wish would be here");
     bd_cont.classList.add("show_wish");
     bd_cont.classList.add("bg");
 }
+
+
+animated.addEventListener('animationend', () => {
+  console.log('Animation ended');
+  setInterval(() => {
+      animated.style.display = "none";
+      document.querySelector(".poem").classList.add("d_flex");
+      document.querySelector(".poem").classList.remove("d_none");
+  }, 1000);
+});
+
+document.getElementById('yahh_btn').addEventListener("click", ()=>{
+    document.querySelector(".poem").classList.add("d_none");
+    document.querySelector(".poem").style.display = "none";
+    document.querySelector(".shayari").classList.add("d_flex");
+})
